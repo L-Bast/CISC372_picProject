@@ -77,7 +77,7 @@ void convolute_parallel(Image* srcImage, Image* destImage, Matrix algorithm){
     for (int i = 0; i < num_threads; i++) {
         thread_data[i].src = srcImage;
         thread_data[i].dest = destImage;
-        thread_data[i].algorithm = algorithm;
+        memcpy(thread_data[i].algorithm, algorithm, sizeof(Matrix));
         thread_data[i].start_row = i * rows_per_thread;
 
         if (i == num_threads - 1)
