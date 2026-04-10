@@ -1,0 +1,7 @@
+Script started on Fri Apr 10 09:18:51 2026
+[liambast@r1n01 CISC372_picProject]$ srun ./imageOpenMP pic1.jpg edge
+Took 7 seconds
+[liambast@r1n01 CISC372_picProject]$ ./imagePthread pic1.jpg edge
+Took 7 seconds
+[liambast@r1n01 CISC372_picProject]$ exit
+exit
